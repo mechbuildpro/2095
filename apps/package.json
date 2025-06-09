@@ -1,0 +1,16 @@
+{
+  "name": "mechbuildpro",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "components",
+    "lib"
+  ],
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "dev:admin": "pnpm --filter admin dev",
+    "dev:ai": "pnpm --filter ai dev",
+    "build": "pnpm run build --filter=...",
+    "lint": "pnpm run lint --filter=..."
+  }
+}
