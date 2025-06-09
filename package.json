@@ -1,0 +1,37 @@
+{
+  "name": "mechbuildpro",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "components",
+    "lib"
+  ],
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "dev:web": "pnpm --filter web dev",
+    "dev:admin": "pnpm --filter admin dev",
+    "dev:ai": "pnpm --filter ai dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^4.1.8",
+    "tailwind-merge": "^2.2.1",
+    "clsx": "^2.1.1",
+    "tailwind-variants": "^1.0.0"
+  },
+  "dependencies": {
+    "@shadcn/ui": "^0.0.4",
+    "next-intl": "^4.1.0",
+    "pdfjs-dist": "^5.3.31",
+    "xlsx": "^0.18.5",
+    "docx-preview": "^0.3.5",
+    "monaco-editor": "^0.52.2",
+    "react-monaco-editor": "^0.58.0"
+  }
+}
